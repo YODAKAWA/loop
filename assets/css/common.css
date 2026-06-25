@@ -3055,6 +3055,7 @@ p {
     margin-bottom: 20px;
     border-bottom: solid 1px #c0c0c0;
     position: relative;
+    cursor: pointer;
 }
 
 .faq-contents__q::after {
