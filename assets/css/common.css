@@ -224,8 +224,9 @@ p {
 
     .menu-toggle-input:checked~.header-nav {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         transform: translateZ(-1px);
+        padding:20vw 0;
     }
 
     .menu-toggle-input:checked~.menu-btn-label span:nth-child(1) {
@@ -749,7 +750,7 @@ p {
         height: 50px;
         min-height: 50px;
         width: 250px;
-        min-height: 65px;
+        min-height: 55px;
         font-size: 1.5rem;
         border-radius: 100px;
         box-shadow: 0 0 0.5px 0 rgba(0, 0, 0, 0.3);
@@ -2148,44 +2149,37 @@ p {
     position: relative;
 }
 
-.c-circle__view {
-    width: 100%;
-    height: 100%;
-    display: block;
-    overflow: visible;
+.c-circle__view{
+    width:100%;
+    height:100%;
+    display:block;
+    overflow:visible;
+    transform: rotate(2deg);
 }
 
-.c-circle__1,
-.c-circle__2,
-.c-circle__3,
-.c-circle__4 {
-    fill: transparent;
-    stroke-width: 31.8309886184;
-    stroke-dashoffset: 25;
+.chart{
+    fill:none;
+    stroke-width:31.8309886184;
+    stroke-linecap:butt;
+
+    transform:rotate(-90deg);
+    transform-origin:center;
 }
 
-.c-circle__1 {
-    animation: chart-one 8s infinite ease-in-out;
-    stroke-dasharray: 20.5, 79.5, 0, 0;
-    stroke: #34C759;
+.chart-1{
+    stroke:#34C759;
 }
 
-.c-circle__2 {
-    animation: chart-two 8s infinite ease-in-out;
-    stroke-dasharray: 0, 20.5, 38.5, 41;
-    stroke: #04223b;
+.chart-2{
+    stroke:#04223b;
 }
 
-.c-circle__3 {
-    animation: chart-three 8s infinite ease-in-out;
-    stroke-dasharray: 0, 59, 30, 11;
-    stroke: #284862;
+.chart-3{
+    stroke:#284862;
 }
 
-.c-circle__4 {
-    animation: chart-four 8s infinite ease-in-out;
-    stroke-dasharray: 0, 89, 11, 0;
-    stroke: #3b5e7a;
+.chart-4{
+    stroke:#3b5e7a;
 }
 
 .c-chart-text {
@@ -2255,7 +2249,7 @@ p {
 
 .percent-management {
     top: 12%;
-    left: 30.5%;
+    left: 29.5%;
     color: #fff;
     font-family: "Funnel Display", sans-serif;
     font-size: 1.8rem;
@@ -2263,90 +2257,7 @@ p {
 
 .c-label-line,
 .c-chart-text {
-    animation: label-fade 8s infinite ease-in-out;
-}
-
-
-@keyframes chart-one {
-    0% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-
-    25%,
-    92% {
-        stroke-dasharray: 20.5, 79.5, 0, 0;
-    }
-
-    98%,
-    100% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-}
-
-@keyframes chart-two {
-    0% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-
-    25%,
-    92% {
-        stroke-dasharray: 0, 20.5, 38.5, 41;
-    }
-
-    98%,
-    100% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-}
-
-@keyframes chart-three {
-    0% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-
-    25%,
-    92% {
-        stroke-dasharray: 0, 59, 30, 11;
-    }
-
-    98%,
-    100% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-}
-
-@keyframes chart-four {
-    0% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-
-    25%,
-    92% {
-        stroke-dasharray: 0, 89, 11, 0;
-    }
-
-    98%,
-    100% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-}
-
-@keyframes label-fade {
-
-    0%,
-    25% {
-        opacity: 0;
-    }
-
-    31%,
-    92% {
-        opacity: 1;
-    }
-
-    96%,
-    100% {
-        opacity: 0;
-    }
+    animation: label-fade 8s ease-in-out;
 }
 
 .chart-wrapper {
@@ -2404,133 +2315,9 @@ p {
 .simulation-flow__image img {
     padding-bottom: 20px;
     border-bottom: solid 1px #cdcdcd;
-    opacity: 0;
-    animation: flow-image-fade 8s infinite ease-in-out;
+    opacity: 1;
 }
 
-.simulation-flow__image img:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.simulation-flow__image img:nth-child(2) {
-    animation-delay: 0.7s;
-}
-
-.simulation-flow__image img:nth-child(3) {
-    animation-delay: 1.4s;
-}
-
-
-
-.is-animated .simulation-flow__image img {
-    opacity: 0;
-    animation: flow-image-fade 8s infinite ease-in-out;
-}
-
-@keyframes chart-one {
-    0% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-
-    25%,
-    95% {
-        stroke-dasharray: 20.5, 79.5, 0, 0;
-    }
-
-    95.1%,
-    100% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-}
-
-@keyframes chart-two {
-    0% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-
-    25%,
-    95% {
-        stroke-dasharray: 0, 20.5, 38.5, 41;
-    }
-
-    95.1%,
-    100% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-}
-
-@keyframes chart-three {
-    0% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-
-    25%,
-    95% {
-        stroke-dasharray: 0, 59, 30, 11;
-    }
-
-    95.1%,
-    100% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-}
-
-@keyframes chart-four {
-    0% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-
-    25%,
-    95% {
-        stroke-dasharray: 0, 89, 11, 0;
-    }
-
-    95.1%,
-    100% {
-        stroke-dasharray: 0, 100, 0, 0;
-    }
-}
-
-@keyframes label-fade {
-
-    0%,
-    25% {
-        opacity: 0;
-    }
-
-    31%,
-    95% {
-        opacity: 1;
-    }
-
-    95.1%,
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes flow-image-fade {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-
-    9% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    95% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    95.1%,
-    100% {
-        opacity: 0;
-        transform: translateY(0);
-    }
-}
 
 @media screen and (min-width: 1441px) {
     .simulation {
@@ -2716,8 +2503,6 @@ p {
 
     .simulation-flow__image img {
         padding-bottom: 15px;
-        opacity: 0;
-        animation: flow-image-fade 8s infinite ease-in-out;
         flex: 1;
         width: 100%;
     }
@@ -3055,7 +2840,6 @@ p {
     margin-bottom: 20px;
     border-bottom: solid 1px #c0c0c0;
     position: relative;
-    cursor: pointer;
 }
 
 .faq-contents__q::after {
