@@ -6006,6 +6006,7 @@
                 <div class="contact-contents js-fade">
                     <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
                         <input type="hidden" name="access_key" value="b4a4d401-6ef9-4692-850b-d1929f954ba4">
+                        <input type="hidden" name="subject" value="==お問い合わせがありました==">
                         <div class="contact-contents__about">
                             <h4>詳細項目<span>必須</span></h4>
                             <div class="contact-contents__about-inner">
@@ -6020,41 +6021,41 @@
                         <div class="contact-contents__item">
                             <label>
                                 <h4>お名前<span>必須</span></h4>
-                                <input type="text" name="name" required placeholder="山田太郎">
+                                <input name="お名前" type="text" name="name" required placeholder="山田太郎">
                             </label>
                         </div>
                         <div class="contact-contents__item">
                             <label>
                                 <h4>会社名</h4>
-                                <input type="text" name="company" required placeholder="株式会社LOOP">
+                                <input name="会社名" type="text" name="company" required placeholder="株式会社LOOP">
                             </label>
                         </div>
                         <div class="contact-contents__item">
                             <label>
                                 <h4>メールアドレス<span>必須</span></h4>
-                                <input type="email" name="email" required placeholder="sample@gmail.com">
+                                <input　name="メールアドレス" type="email" name="email" required placeholder="sample@gmail.com">
                             </label>
                         </div>
                         <div class="contact-contents__item">
                             <label>
                                 <h4>電話番号<span>必須</span></h4>
-                                <input type="tel" name="tel" placeholder="000-0000-0000">
+                                <input name="会社名" type="tel" name="tel" placeholder="000-0000-0000">
                             </label>
                         </div>
                         <div class="inquiry-only" id="inquiry-only-fields" style="display: none;">
                             <div class="contact-contents__about second">
                                 <h4>お問い合わせ項目<span>必須</span></h4>
                                 <div class="contact-contents__about-inner second">
-                                    <label><input type="radio" name="inquiry_type" value="加盟検討"
+                                    <label><input name="加盟検討" type="radio" name="inquiry_type" value="加盟検討"
                                             checked>弊社サービスの加盟検討</label>
-                                    <label><input type="radio" name="inquiry_type" value="ご質問">弊社サービスに関するご質問</label>
-                                    <label><input type="radio" name="inquiry_type" value="その他"> その他</label>
+                                    <label><input　name="ご質問" type="radio" name="inquiry_type" value="ご質問">弊社サービスに関するご質問</label>
+                                    <label><input name="その他" type="radio" name="inquiry_type" value="その他"> その他</label>
                                 </div>
                             </div>
                             <div class="contact-contents__item textarea">
                                 <label>
                                     <h4>お問い合わせ内容<span>必須</span></h4>
-                                    <textarea name="message" id="message-input" rows="6" cols="40"
+                                    <textarea name="お問い合わせ内容" name="message" id="message-input" rows="6" cols="40"
                                         placeholder="お問い合わせ内容"></textarea>
                                 </label>
                             </div>
