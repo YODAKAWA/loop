@@ -6193,9 +6193,8 @@
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
 
-            //const formData = new FormData(form);
-            //formData.append("access_key", "b4a4d401-6ef9-4692-850b-d1929f954ba4");
-
+            const formData = new FormData(form);
+            
             const originalText = submitBtn.textContent;
 
             submitBtn.textContent = "送信中";
