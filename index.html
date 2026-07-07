@@ -79,9 +79,9 @@
                 <h1 class="js-fade"><img src="assets/img/fv-h1.png" alt="固定費はそのままで、飲食店の空き時間を、売上に変えませんか？"></h1>
                 <h2 class="js-fade"><img src="assets/img/fv-h2.png" alt="初期費用を抑えて、お店に「もう一つの売上の柱」をプラス。"></h2>
                 <div class="fv-svg">
-                    <svg class="animated" id="freepik_stories-eating-korean-food"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" version="1.1"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+                    <svg class="animated" id="freepik_stories-eating-korean-food" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 500 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:svgjs="http://svgjs.com/svgjs">
                         <style>
                             svg#freepik_stories-eating-korean-food:not(.animated) .animable {
                                 opacity: 0;
@@ -798,7 +798,8 @@
                                 </feColorMatrix>
                             </filter>
                         </defs>
-                    </svg></div>
+                    </svg>
+                </div>
                 <a class="fv-cv_button js-fade" href="#contact">お問い合わせ</a>
             </div>
             <div class="scroll_down">
@@ -807,8 +808,8 @@
                         <span></span>
                     </span>
                     <p>SCROLL</p>
-                </a>
-            </div>
+                    </a>
+                </div>
         </section>
         <section class="problem">
             <div class="problem-inner">
@@ -5865,7 +5866,7 @@
                         </div>
                         <div class="simulation-flow">
                             <h4 class="simulation-contents__index-sp js-fade">入金の流れ</h4>
-                            <div  class="simulation-flow__image js-fade">
+                            <div class="simulation-flow__image js-fade">
                                 <img src="assets/img/simulation02-01.png" alt="入金の流れ">
                                 <img src="assets/img/simulation02-02.png" alt="入金の流れ">
                                 <img src="assets/img/simulation02-03.png" alt="入金の流れ">
@@ -6005,6 +6006,7 @@
                 <div class="contact-contents js-fade">
                     <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
                         <input type="hidden" name="access_key" value="b4a4d401-6ef9-4692-850b-d1929f954ba4">
+                        <div class="contact-contents__about">
                             <h4>詳細項目<span>必須</span></h4>
                             <div class="contact-contents__about-inner">
                                 <label>
@@ -6211,7 +6213,7 @@
                     alert("お問い合わせが送信されました。");
                     form.reset();
                 } else {
-                    alert("通信エラーが発生しました。もう一度お試しください。" + data.message);
+                    alert("通信エラーが発生しました。もう一度お試しください。");
                 }
 
             } catch (error) {
@@ -6223,7 +6225,7 @@
         });
 
     </script>
-    
+
 </body>
 
 </html>
