@@ -1,0 +1,126 @@
+
+.p-policy {
+    background-color: #fff; 
+    color: #1f2937;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    padding: 140px 20px 100px;
+}
+
+.p-policy__container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.p-policy__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 2px solid #1e1e1e;
+    padding-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.p-policy__lead {
+    font-size: 1.3rem;
+    color: #4b5563;
+    margin-bottom: 40px;
+}
+
+.p-policy__section {
+    margin-bottom: 35px;
+}
+
+.p-policy__heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #111111;
+}
+
+.p-policy__text {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.p-policy__list {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.p-policy__list-item {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+.p-policy__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.p-policy__info-list {
+    margin-top: 15px;
+    margin-bottom: 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+.p-policy__info-group {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 12px 0;
+}
+
+.p-policy__info-label {
+    font-weight: 700;
+    width: 140px;
+    flex-shrink: 0; 
+    font-size: 1.3rem;
+}
+
+.p-policy__info-value {
+    margin-left: 0;
+    font-size: 1.3rem;
+    color: #4b5563;
+}
+
+.p-policy__footer-text {
+    font-size: 1.3rem;
+    text-align: right;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 640px) {
+    .p-policy {
+        padding: 100px 15px 50px;
+    }
+
+    .p-policy__title {
+        font-size: 2.0rem;
+        margin-bottom: 24px;
+    }
+
+    .p-policy__heading {
+        font-size: 16px;
+    }
+
+    .p-policy__lead,
+    .p-policy__text,
+    .p-policy__list-item {
+        font-size: 1.3rem; 
+    }
+
+    .p-policy__info-group {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .p-policy__info-label {
+        width: 100%;
+    }
+}
