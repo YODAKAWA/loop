@@ -6008,7 +6008,7 @@
                   <script type="text/javascript">
                     var submitted = false;
                   </script>
-                  <form action="https://script.google.com/macros/s/AKfycbx7Xwp3L1WpvvqhN4qdnZ0CDjiFhYPIhNAOwEbkGGfIBlZAKEA7czg2FDzoxEb2sPZz/exec" method="POST" id="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
+                  <form action="" method="POST" id="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="contact-contents__about">
                             <h4>詳細項目<span>必須</span></h4>
                             <div class="contact-contents__about-inner">
@@ -6188,42 +6188,6 @@
 
             offset += value;
 
-        });
-
-        const form = document.getElementById('contact-form');
-        const submitBtn = form.querySelector('button[type="submit"]');
-
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            const formData = new FormData(form);
-            
-            const originalText = submitBtn.textContent;
-
-            submitBtn.textContent = "送信中";
-            submitBtn.disabled = true;
-
-            try {
-                const response = await fetch("https://api.web3forms.com/submit", {
-                    method: "POST",
-                    body: formData
-                });
-
-                const data = await response.json();
-
-                if (response.ok) {
-                    alert("お問い合わせが送信されました。");
-                    form.reset();
-                } else {
-                    alert("通信エラーが発生しました。もう一度お試しください。");
-                }
-
-            } catch (error) {
-                alert("問題が発生しました。もう一度お試しください。");
-            } finally {
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }
         });
 
     </script>
