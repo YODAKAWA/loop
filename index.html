@@ -6004,10 +6004,11 @@
                     </h2>
                 </div>
                 <div class="contact-contents js-fade">
-                    <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
-                        <input type="hidden" name="access_key" value="b4a4d401-6ef9-4692-850b-d1929f954ba4">
-                        <input type="hidden" name="subject" value="Webサイトからお問い合わせがありました。">
-                        
+                  <iframe name="hidden_iframe" style="display:none;" onload="if(submitted) {alert('送信完了しました！'); window.location.reload();}"></iframe>
+                  <script type="text/javascript">
+                    var submitted = false;
+                  </script>
+                  <form action="https://script.google.com/macros/s/AKfycbx7Xwp3L1WpvvqhN4qdnZ0CDjiFhYPIhNAOwEbkGGfIBlZAKEA7czg2FDzoxEb2sPZz/exec" method="POST" id="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="contact-contents__about">
                             <h4>詳細項目<span>必須</span></h4>
                             <div class="contact-contents__about-inner">
