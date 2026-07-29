@@ -12,24 +12,26 @@
     <meta property="og:title" content="ブランドシェアで店舗の売り上げUP! | LOOP株式会社">
     <meta property="og:description" content="飲食店の空き時間を売上に。初期費用を抑えて、お店に「もう一つの売上の柱」をプラス。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yodakawa.github.io/loop/">
-    <meta property="og:image" content="https://yodakawa.github.io/loop/assets/img/ogp.jpg">
+    <meta property="og:url" content="https://loop-deliver.com/">
+    <meta property="og:image" content="https://loop-deliver.com/assets/images/ogp.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ブランドシェアで店舗の売り上げUP! | LOOP株式会社">
     <meta name="twitter:description" content="飲食店の空き時間を売上に。初期費用を抑えて、お店に「もう一つの売上の柱」をプラス。">
-    <meta name="twitter:image" content="https://yodakawa.github.io/loop/assets/img/ogp.jpg">
+    <meta name="twitter:image" content="https://loop-deliver.com/assets/img">
 
-    <link rel="canonical" href="https://yodakawa.github.io/loop/">
+    <link rel="canonical" href="https://loop-deliver.com/">
 
     <link rel="icon" href="assets/img/favicon.png" sizes="any">
-    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/common.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -6004,19 +6006,22 @@
                     </h2>
                 </div>
                 <div class="contact-contents js-fade">
-                  <iframe name="hidden_iframe" style="display:none;" onload="if(submitted) {alert('送信完了しました！'); window.location.reload();}"></iframe>
-                  <script type="text/javascript">
-                    var submitted = false;
-                  </script>
-                  <form action="" method="POST" id="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
+                    <iframe name="hidden_iframe" style="display:none;"
+                        onload="if(submitted) {alert('お問い合わせを送信しました。'); window.location.reload();}"></iframe>
+                    <script type="text/javascript">
+                        var submitted = false;
+                    </script>
+                    <form
+                        action="https://script.google.com/macros/s/AKfycbx7Xwp3L1WpvvqhN4qdnZ0CDjiFhYPIhNAOwEbkGGfIBlZAKEA7czg2FDzoxEb2sPZz/exec"
+                        method="POST" id="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="contact-contents__about">
                             <h4>詳細項目<span>必須</span></h4>
                             <div class="contact-contents__about-inner">
                                 <label>
-                                    <input type="radio" name="form-toggle" value="request" checked
+                                    <input type="radio" name="form-toggle" value="資料請求" checked
                                         onchange="toggleFields()">資料請求</label>
                                 <label>
-                                    <input type="radio" name="form-toggle" value="inquiry"
+                                    <input type="radio" name="form-toggle" value="お問い合わせ"
                                         onchange="toggleFields()">お問い合わせ</label>
                             </div>
                         </div>
@@ -6074,6 +6079,32 @@
                     </form>
                 </div>
             </div>
+            </div>
+        </section>
+        <section class="company">
+            <div class="company-inner">
+                <div class="title js-fade">
+                    <h3>Company</h3>
+                    <h2>
+                        <div class="title-main">会社概要</div>
+                    </h2>
+                </div>
+                <div class="company-contents">
+                    <ul class="company-contents__list">
+                        <li>
+                            <h4>会社名</h4>
+                            <p>株式会社LOOP</p>
+                        </li>
+                        <li>
+                            <h4>所在地</h4>
+                            <p>愛知県名古屋市中区栄3-32-22青木ビル東館5F</p>
+                        </li>
+                        <li>
+                            <h4>代表取締役</h4>
+                            <p>後藤千丈</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
@@ -6190,8 +6221,24 @@
 
         });
 
-    </script>
+        function toggleFields() {
+            const selectedRadio = document.querySelector('input[name="form-toggle"]:checked');
+            const inquiryFields = document.getElementById('inquiry-only-fields');
 
+            const inputs = inquiryFields.querySelectorAll('input, select, textarea');
+
+            if (selectedRadio && selectedRadio.value === "お問い合わせ") {
+                inquiryFields.style.display = 'flex';
+
+                inputs.forEach(input => input.disabled = false);
+            } else {
+                inquiryFields.style.display = 'none';
+
+                inputs.forEach(input => input.disabled = true);
+            }
+        }
+    </script>
+    </script>
 </body>
 
 </html>
