@@ -3449,6 +3449,7 @@ p {
         text-align: center;
         width: 100%;
         padding:10px;
+        font-size:1,4rem;
     }
 
     .company-contents__list p {
@@ -3457,6 +3458,7 @@ p {
         width: 100%;
         border-top:solid 1px #ededed;
         padding:10px;
+        font-size:1,4rem;
     }
     .company-contents__list li:after {
     content: "";
