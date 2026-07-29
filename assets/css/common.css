@@ -3432,7 +3432,7 @@ p {
     }
 
     .company-contents {
-        padding: 40px 20px;
+        padding: 40px 0;
     }
 
     .company-contents__list {
