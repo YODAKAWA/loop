@@ -2845,6 +2845,7 @@ p {
     margin-bottom: 20px;
     border-bottom: solid 1px #ebebeb;
     position: relative;
+    cursor: pointer;
 }
 
 .faq-contents__q::after {
