@@ -1942,11 +1942,14 @@ p {
 }
 
 .menu-tabs li p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-top: 20px;
     display: flex;
     justify-content: center;
     font-weight: 600;
+    background-color:#fff;
+    padding:10px;
+    border-radius:100px;
 }
 
 .slide-arrow {
@@ -2039,8 +2042,10 @@ p {
     }
 
     .menu-tabs li p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         margin-top: 15px;
+        background-color:#fff;
+        padding:7px;
     }
 
     .menu-tabs li {
@@ -2059,13 +2064,13 @@ p {
     .prev-btn {
         left: 20px;
         padding-right: 7px;
-        display: none;
+        /*display: none;*/
     }
 
     .next-btn {
         right: 20px;
         padding-left: 7px;
-        display: none;
+        /*display: none;*/
     }
 }
 
@@ -3449,7 +3454,7 @@ p {
         text-align: center;
         width: 100%;
         padding:10px;
-        font-size:1,4rem;
+        font-size:1.4rem;
     }
 
     .company-contents__list p {
@@ -3458,7 +3463,7 @@ p {
         width: 100%;
         border-top:solid 1px #ededed;
         padding:10px;
-        font-size:1,4rem;
+        font-size:1.4rem;
     }
     .company-contents__list li:after {
     content: "";
