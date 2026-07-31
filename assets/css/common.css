@@ -3422,6 +3422,8 @@ p {
     .company-contents__list h4 {
         font-size: 1.6rem;
         line-height: 2.4rem;
+        display: flex;
+        align-items: center;
     }
 
     .company-contents__list p {
