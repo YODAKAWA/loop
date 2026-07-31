@@ -2062,13 +2062,13 @@ p {
     }
 
     .prev-btn {
-        left: 20px;
+        left: 10px;
         padding-right: 7px;
         /*display: none;*/
     }
 
     .next-btn {
-        right: 20px;
+        right: 10px;
         padding-left: 7px;
         /*display: none;*/
     }
